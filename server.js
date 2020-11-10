@@ -16,7 +16,7 @@ if (process.env.NODE_ENV === 'production') {
 
 // Connect to the Mongo DB
 mongoose
-	.connect(process.env.MONGODB_URI || 'mongodb://localhost/quizzler', {
+	.connect(process.env.DB_URI || 'mongodb://localhost/quizzler', {
 		useNewUrlParser: true,
 		useUnifiedTopology: true,
 		createIndexes: true,
